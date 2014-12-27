@@ -18,9 +18,11 @@ defmodule Experf.Http  do
 
   defp handle_response({_, %HTTPoison.Response{status_code: status_code}}, id) do
     Logger.info "#{id}: error (#{status_code})"
+    {:error, id, status_code}
   end
 
   defp handle_response({:error, %HTTPoison.Error{id: _, reason: reason}}, id) do
     Logger.info "#{id}: error (#{reason})"
+    {:error, id, reason}
   end
 end

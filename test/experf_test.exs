@@ -2,8 +2,7 @@ defmodule ExperfTest do
   use ExUnit.Case
 
   test "correct arguments passed in" do
-    #expected = ~r/[n: 4, url: \"http:\/\/example.com\"]/
-    #actual   = Experf.main(["--n", "4"]) 
+    restuls = Experf.main(["--n", "1", "--url", "http://www.sdhflsjfsljfsldfjsdfjlsfjls.com"])
     #assert expected == actual
   end
 end

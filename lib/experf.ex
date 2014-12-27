@@ -1,5 +1,4 @@
 defmodule Experf do
-  require Logger
 
   def main(args) do
     options = parse_args(args)

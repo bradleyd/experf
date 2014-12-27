@@ -7,7 +7,7 @@ defmodule Experf.Coordinator do
   end
 
   defp coordinate(%{finished: n, num_requests: n}) do
-    :ok 
+    {:ok, "finished"} 
   end
 
   defp coordinate(status = %{finished: f, num_requests: n}) do

@@ -1,6 +1,8 @@
 Experf
 ======
 
+[![Build Status](https://travis-ci.org/bradleyd/experf.svg)](https://travis-ci.org/bradleyd/experf)
+
 HTTPerf clone in elixir
 
 * followed along http://www.watchsumo.com/posts/introduction-to-elixir-v1-0-0-by-example-i
